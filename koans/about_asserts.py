@@ -3,6 +3,7 @@
 
 from runner.koan import *
 
+
 class AboutAsserts(Koan):
 
     def test_assert_truth(self):
@@ -14,7 +15,7 @@ class AboutAsserts(Koan):
         #
         #   http://bit.ly/about_asserts
 
-        self.assertTrue(True) # This should be True
+        self.assertTrue(True)  # This should be True
 
     def test_assert_with_message(self):
         """
@@ -51,7 +52,7 @@ class AboutAsserts(Koan):
         """
 
         # This throws an AssertionError exception
-        assert False
+        assert True
 
     def test_that_sometimes_we_need_to_know_the_class_type(self):
         """
@@ -70,9 +71,8 @@ class AboutAsserts(Koan):
         #
         # See for yourself:
 
-        self.assertEqual(__, "navel".__class__) # It's str, not <type 'str'>
+        self.assertEqual(str, "navel".__class__)  # It's str, not <type 'str'>
 
         # Need an illustration? More reading can be found here:
         #
         #   https://github.com/gregmalcolm/python_koans/wiki/Class-Attribute
-
